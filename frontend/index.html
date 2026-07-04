@@ -1,1 +1,47 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poultry AI Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🐔 Poultry AI Dashboard</h1>
+
+  <div class="container">
+
+    <!-- LEFT: IMAGE -->
+    <div class="card">
+      <h3>Upload Chicken Image</h3>
+
+      <input type="file" id="imageInput" accept="image/*">
+
+      <br><br>
+
+      <img id="preview" width="250" style="display:none; border-radius:10px;"/>
+
+      <br><br>
+
+      <button onclick="analyze()">Analyze</button>
+
+      <!-- 🆕 HISTORY BUTTON -->
+      <br><br>
+      <button onclick="showHistory()">View History</button>
+
+    </div>
+
+    <!-- RIGHT: RESULT -->
+    <div class="card">
+      <h3>AI Diagnosis</h3>
+      <div id="result"></div>
+    </div>
+
+  </div>
+
+  <!-- JS FILE -->
+  <script src="app.js"></script>
+
+</body>
+</html>
